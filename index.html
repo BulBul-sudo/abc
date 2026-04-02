@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaxNavigator India | GST & Customs Knowledge Portal</title>
+    <meta
+      name="description"
+      content="TaxNavigator India helps you quickly search GST rules, HSN/SAC rates, customs duties, calculators, and official tax updates."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#home" class="brand">TaxNavigator India</a>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="#gst">GST</a></li>
+            <li><a href="#customs">Customs</a></li>
+            <li><a href="#tools">Resources & Tools</a></li>
+            <li><a href="#about">About & Legal</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Official-source-first tax guidance platform</p>
+            <h1>Find GST & Customs rules in seconds.</h1>
+            <p>
+              Search HSN codes, CBIC circular references, return filing steps, and customs duty rules from one
+              structured portal.
+            </p>
+            <form class="search-bar" id="globalSearchForm">
+              <label class="sr-only" for="globalSearch">Search the knowledge base</label>
+              <input
+                id="globalSearch"
+                type="search"
+                placeholder="Search HSN codes, Circulars, or Tax Rules"
+                autocomplete="off"
+              />
+              <button type="submit">Search</button>
+            </form>
+            <p class="search-hint" id="searchResult" aria-live="polite"></p>
+            <div class="quick-links">
+              <a href="https://www.gst.gov.in" target="_blank" rel="noreferrer">GST Portal</a>
+              <a href="https://www.cbic.gov.in" target="_blank" rel="noreferrer">CBIC Portal</a>
+              <a href="https://www.icegate.gov.in" target="_blank" rel="noreferrer">ICEGATE</a>
+            </div>
+          </div>
+          <aside class="updates-card" aria-label="Latest updates and notifications">
+            <h2>Latest Updates & Notifications</h2>
+            <ul id="tickerList">
+              <li>New GST return advisory added for monthly filers.</li>
+              <li>Updated baggage allowance summary for international travelers.</li>
+              <li>RoDTEP rate notes refreshed with latest handbook clarifications.</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section id="gst" class="section">
+        <div class="container">
+          <h2>The GST Portal</h2>
+          <div class="card-grid three">
+            <article class="card">
+              <h3>Basics</h3>
+              <ul>
+                <li>What is GST?</li>
+                <li>CGST, SGST, IGST explained in plain language.</li>
+                <li>When each tax component applies.</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Compliance</h3>
+              <ul>
+                <li>GST registration process and threshold checks.</li>
+                <li>Returns workflow: GSTR-1, GSTR-3B, annual return.</li>
+                <li>E-way Bill generation and common errors.</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Core Concepts</h3>
+              <ul>
+                <li>Input Tax Credit (ITC) eligibility matrix.</li>
+                <li>Reverse Charge Mechanism (RCM) scenarios.</li>
+                <li>Place of Supply decision tree.</li>
+              </ul>
+            </article>
+          </div>
+
+          <article class="card table-card">
+            <div class="table-head">
+              <h3>HSN/SAC Directory (Sample)</h3>
+              <label for="hsnFilter">Find code or product</label>
+              <input id="hsnFilter" type="search" placeholder="e.g. mobile phone, 9983" />
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Code</th>
+                    <th>Description</th>
+                    <th>GST Rate</th>
+                    <th>Last Updated</th>
+                  </tr>
+                </thead>
+                <tbody id="hsnTableBody">
+                  <tr>
+                    <td>HSN</td>
+                    <td>8517</td>
+                    <td>Mobile phones and telecom apparatus</td>
+                    <td>18%</td>
+                    <td>April 2, 2026</td>
+                  </tr>
+                  <tr>
+                    <td>HSN</td>
+                    <td>1006</td>
+                    <td>Rice (subject to category conditions)</td>
+                    <td>0% / 5%</td>
+                    <td>April 2, 2026</td>
+                  </tr>
+                  <tr>
+                    <td>SAC</td>
+                    <td>9983</td>
+                    <td>Professional, technical and business services</td>
+                    <td>18%</td>
+                    <td>April 2, 2026</td>
+                  </tr>
+                  <tr>
+                    <td>SAC</td>
+                    <td>9965</td>
+                    <td>Goods transport services</td>
+                    <td>5% / 12%</td>
+                    <td>April 2, 2026</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="customs" class="section section-alt">
+        <div class="container">
+          <h2>The Customs Portal</h2>
+          <div class="card-grid two">
+            <article class="card">
+              <h3>Import / Export</h3>
+              <ul>
+                <li>Step-by-step import and export procedures.</li>
+                <li>Bill of Entry and Shipping Bill filing checklist.</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Valuation & Duties</h3>
+              <ul>
+                <li>Basic Customs Duty (BCD) quick reference.</li>
+                <li>IGST on imports and valuation logic.</li>
+                <li>Anti-dumping duties and Social Welfare Surcharge notes.</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Special Schemes</h3>
+              <ul>
+                <li>SEZ and EOU compliance basics.</li>
+                <li>RoDTEP, EPCG, and export incentive overview.</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Baggage Rules</h3>
+              <ul>
+                <li>Allowance and declaration basics for travelers.</li>
+                <li>Duty examples for accompanied and unaccompanied baggage.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="tools" class="section">
+        <div class="container">
+          <h2>Resources & Tools</h2>
+          <div class="card-grid two">
+            <article class="card">
+              <h3>Calculators</h3>
+              <div class="calc-grid">
+                <form id="gstCalcForm" class="mini-form">
+                  <h4>GST Calculator</h4>
+                  <label for="amount">Amount</label>
+                  <input id="amount" type="number" min="0" step="0.01" required />
+                  <label for="rate">Rate (%)</label>
+                  <input id="rate" type="number" min="0" step="0.01" required />
+                  <button type="submit">Calculate</button>
+                  <p id="gstResult" class="result"></p>
+                </form>
+
+                <form id="customsCalcForm" class="mini-form">
+                  <h4>Customs Import Duty Calculator</h4>
+                  <label for="assessable">Assessable Value</label>
+                  <input id="assessable" type="number" min="0" step="0.01" required />
+                  <label for="bcd">BCD (%)</label>
+                  <input id="bcd" type="number" min="0" step="0.01" required />
+                  <label for="igst">IGST (%)</label>
+                  <input id="igst" type="number" min="0" step="0.01" required />
+                  <button type="submit">Calculate</button>
+                  <p id="customsResult" class="result"></p>
+                </form>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3>Document Library & Newsletter</h3>
+              <p>
+                Download bare acts, rules, circular digests, and weekly judgment summaries. Each resource is tagged
+                with the latest revision date.
+              </p>
+              <ul>
+                <li><a href="#">GST Act (Consolidated PDF)</a> — Last Updated: April 2, 2026</li>
+                <li><a href="#">Customs Act & Rules Digest</a> — Last Updated: April 2, 2026</li>
+                <li><a href="#">CBIC Circular Index</a> — Last Updated: April 2, 2026</li>
+              </ul>
+              <form id="newsletterForm" class="newsletter">
+                <label for="email">Subscribe for weekly tax updates</label>
+                <div>
+                  <input id="email" type="email" required placeholder="you@example.com" />
+                  <button type="submit">Subscribe</button>
+                </div>
+                <p id="newsletterMsg" class="result"></p>
+              </form>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section section-alt">
+        <div class="container">
+          <h2>About & Legal</h2>
+          <article class="card">
+            <h3>Our Mission</h3>
+            <p>
+              We simplify indirect tax compliance for businesses, professionals, and students using plain English,
+              curated explainers, and official references.
+            </p>
+            <h3>Strict Disclaimer</h3>
+            <p class="disclaimer">
+              This website is for informational and educational purposes only. It does not constitute legal, tax, or
+              professional advice. Users must verify all positions with official notifications, circulars, and qualified
+              professionals before making compliance or financial decisions.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 TaxNavigator India. Built for fast, trustworthy GST & Customs research.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
